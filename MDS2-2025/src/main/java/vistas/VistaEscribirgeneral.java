@@ -1,0 +1,110 @@
+package vistas;
+
+import com.vaadin.flow.component.Tag;
+import com.vaadin.flow.component.dependency.JsModule;
+import com.vaadin.flow.component.littemplate.LitTemplate;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
+import com.vaadin.flow.component.template.Id;
+import com.vaadin.flow.dom.Element;
+import com.vaadin.flow.component.textfield.TextArea;
+import com.vaadin.flow.component.button.Button;
+
+@Tag("vista-escribirgeneral")
+@JsModule("./views/vista-escribirgeneral.ts")
+public class VistaEscribirgeneral extends LitTemplate {
+
+    @Id("vaadinHorizontalLayout")
+	private HorizontalLayout vaadinHorizontalLayout;
+	@Id("vaadinVerticalLayout")
+	private Element vaadinVerticalLayout;
+	@Id("vaadinVerticalLayout2")
+	private Element vaadinVerticalLayout2;
+	@Id("vaadinVerticalLayout1")
+	private Element vaadinVerticalLayout1;
+	@Id("texto")
+	private TextArea texto;
+	@Id("twittear")
+	private Button twittear;
+	@Id("cancelar")
+	private Button cancelar;
+	@Id("vaadinVerticalLayout3")
+	private Element vaadinVerticalLayout3;
+	@Id("vaadinVerticalLayout4")
+	private Element vaadinVerticalLayout4;
+	public VistaEscribirgeneral() {
+        // You can initialise any data required for the connected UI components here.
+    }
+
+	public HorizontalLayout getVaadinHorizontalLayout() {
+		return vaadinHorizontalLayout;
+	}
+
+	public void setVaadinHorizontalLayout(HorizontalLayout vaadinHorizontalLayout) {
+		this.vaadinHorizontalLayout = vaadinHorizontalLayout;
+	}
+
+	public Element getVaadinVerticalLayout() {
+		return vaadinVerticalLayout;
+	}
+
+	public void setVaadinVerticalLayout(Element vaadinVerticalLayout) {
+		this.vaadinVerticalLayout = vaadinVerticalLayout;
+	}
+
+	public Element getVaadinVerticalLayout2() {
+		return vaadinVerticalLayout2;
+	}
+
+	public void setVaadinVerticalLayout2(Element vaadinVerticalLayout2) {
+		this.vaadinVerticalLayout2 = vaadinVerticalLayout2;
+	}
+
+	public Element getVaadinVerticalLayout1() {
+		return vaadinVerticalLayout1;
+	}
+
+	public void setVaadinVerticalLayout1(Element vaadinVerticalLayout1) {
+		this.vaadinVerticalLayout1 = vaadinVerticalLayout1;
+	}
+
+	public TextArea getTexto() {
+		return texto;
+	}
+
+	public void setTexto(TextArea texto) {
+		this.texto = texto;
+	}
+
+	public Button getTwittear() {
+		return twittear;
+	}
+
+	public void setTwittear(Button twittear) {
+		this.twittear = twittear;
+	}
+
+	public Button getCancelar() {
+		return cancelar;
+	}
+
+	public void setCancelar(Button cancelar) {
+		this.cancelar = cancelar;
+	}
+
+	public Element getVaadinVerticalLayout3() {
+		return vaadinVerticalLayout3;
+	}
+
+	public void setVaadinVerticalLayout3(Element vaadinVerticalLayout3) {
+		this.vaadinVerticalLayout3 = vaadinVerticalLayout3;
+	}
+
+	public Element getVaadinVerticalLayout4() {
+		return vaadinVerticalLayout4;
+	}
+
+	public void setVaadinVerticalLayout4(Element vaadinVerticalLayout4) {
+		this.vaadinVerticalLayout4 = vaadinVerticalLayout4;
+	}
+
+}
