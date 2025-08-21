@@ -16,6 +16,9 @@ public class ListaSeguidoresNoRegistrados extends VistaVerlistaseguidoresnoregis
 	}
 	
 	public void Botones() {
-		
+		getVolver().addClickListener(event -> {
+			elverticallayout.removeAll();
+			elverticallayout.add(new VerPerfil(elverticallayout));
+		});	
 	}
 }
