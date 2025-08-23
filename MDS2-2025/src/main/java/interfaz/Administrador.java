@@ -12,13 +12,19 @@ public class Administrador extends VistaListafijadetweetsadministrador {
 //	public ListaAdministrador _listaAdministrador;
 	public VerticalLayout elverticallayout;
 	public boolean usuarioAdministrador = true;
-
+	public ListaFijaTyRA _listaFijaTyRA;
 	
 	public Administrador(VerticalLayout vl) {
 		elverticallayout = vl;
 		this.getStyle().set("width", "100%");
 		this.getStyle().set("height", "100%");
 		this.Botones();
+		ListaPublicacionesAdministrador();
+	}
+	
+	public void ListaPublicacionesAdministrador() {
+		this._listaFijaTyRA = new ListaFijaTyRA(this, true);
+		this.getLista().as(VerticalLayout.class).add(_listaFijaTyRA);
 	}
 	
 	public void Botones() {

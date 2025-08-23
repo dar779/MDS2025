@@ -38,6 +38,18 @@ public class UsuarioNoRegistrado extends VistaAct01usuarionoregistrado{
 		this.getStyle().set("width", "100%");
 		this.getStyle().set("height", "100%");
 		this.Botones();
+		ListaUsuarios__Usuario_no_registrado_();
+		ListaFijaHashtags__Usuario_no_registrado_();
+	}
+
+	public void ListaUsuarios__Usuario_no_registrado_() {
+		this._listaFijaUNR = new ListaFijaUNR(this);
+		this.getUsuarios().as(VerticalLayout.class).add(_listaFijaUNR);
+	}
+	
+	public void ListaFijaHashtags__Usuario_no_registrado_() {
+		this._listaFijaHNR = new ListaFijaHNR(this);
+		this.getHashtags().as(VerticalLayout.class).add(_listaFijaHNR);
 	}
 	
 	public void Botones() {

@@ -39,6 +39,9 @@ public class VerPerfil extends VistaVerperfil{
 		this.Botones();
 	}
 	
+	// LOS BOTONES DE TWEETS, RETWEETS Y ME GUSTAS SE COGE LA INFORMACIÓN DIRECTAMENTE DESDE LA BASE DE DATOS
+	// LAS RELACIONES DESEADAS PARA ESTOS SON "publicTweet", "retweetearTweet" y "gustarTweet"
+	
 	public void Botones() {
 
 		getInicio().addClickListener(event -> {

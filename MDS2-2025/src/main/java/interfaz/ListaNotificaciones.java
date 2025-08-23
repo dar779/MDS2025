@@ -22,7 +22,13 @@ public class ListaNotificaciones extends VistaVernotificaciones
 		this.getStyle().set("width", "100%");
 		this.getStyle().set("height", "100%");
 		this.Botones();
+		//cargarNotificaciones();
 	}
+	
+	// LAS NOTIFICACIONES NO EXISTEN EN LA BASE DE DATOS.
+	// EN LAS NOTIFICACIONES PONDREMOS TEXTO
+	// EN LOS RETwEETS PODEMOS PONER "Se ha retweetado tu tweet"
+	// EN LAS MENCIONES, SE NOTIFICA AL USUARIO DE QUE HA SIDO MENCIONADO EN UN TWEET (@pepito)
 	
 	public void Botones() {
 		getVolver().addClickListener(event -> {
