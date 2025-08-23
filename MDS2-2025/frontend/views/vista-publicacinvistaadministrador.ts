@@ -23,21 +23,20 @@ export class VistaPublicacinvistaadministrador extends LitElement {
   <vaadin-horizontal-layout theme="spacing" id="vaadinHorizontalLayout1" style="width: 100%; align-self: stretch;">
    <vaadin-vertical-layout theme="spacing" id="vaadinVerticalLayout3" style="width: 20%;"></vaadin-vertical-layout>
    <vaadin-button id="borrar" style="align-self: center;" tabindex="0">
-    Borrar Comentario
+    Borrar Publicacion
    </vaadin-button>
    <vaadin-vertical-layout theme="spacing" id="vaadinVerticalLayout2" style="width: 20%;"></vaadin-vertical-layout>
    <vaadin-button id="ban" style="align-self: center;" tabindex="0">
-    Ban Usuario
+     Ban Usuario 
    </vaadin-button>
    <vaadin-vertical-layout theme="spacing" id="vaadinVerticalLayout1" style="width: 20%;"></vaadin-vertical-layout>
   </vaadin-horizontal-layout>
-  <vaadin-horizontal-layout theme="spacing" id="vaadinHorizontalLayout" style="width: 100%; height: 100%; align-self: center;">
-   <vaadin-vertical-layout theme="spacing" id="vaadinVerticalLayout" style="align-self: center; width: 100%;">
-    <vaadin-button id="inicio" style="align-self: center;" tabindex="0">
-     Inicio 
-    </vaadin-button>
-   </vaadin-vertical-layout>
-  </vaadin-horizontal-layout>
+ </vaadin-vertical-layout>
+ <vaadin-vertical-layout id="comentarios" style="height: 50%; width: 100%; padding: var(--lumo-space-m);"></vaadin-vertical-layout>
+ <vaadin-vertical-layout theme="spacing" id="vaadinVerticalLayout" style="align-self: center; width: 100%;">
+  <vaadin-button id="inicio" style="align-self: center;" tabindex="0">
+    Inicio 
+  </vaadin-button>
  </vaadin-vertical-layout>
 </vaadin-vertical-layout>
 `;

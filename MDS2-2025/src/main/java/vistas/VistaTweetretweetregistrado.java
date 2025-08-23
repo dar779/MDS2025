@@ -29,8 +29,6 @@ public class VistaTweetretweetregistrado extends LitTemplate {
 	private Button volver;
 	@Id("vaadinHorizontalLayout2")
 	private HorizontalLayout vaadinHorizontalLayout2;
-	@Id("comentarios")
-	private HorizontalLayout comentarios;
 	@Id("comentar")
 	private Button comentar;
 	@Id("vaadinVerticalLayout3")
@@ -45,6 +43,8 @@ public class VistaTweetretweetregistrado extends LitTemplate {
 	private Button reTweet;
 	@Id("vaadinVerticalLayout5")
 	private Element vaadinVerticalLayout5;
+	@Id("comentarios")
+	private Element comentarios;
 
 	public VistaTweetretweetregistrado() {
         // You can initialise any data required for the connected UI components here.
@@ -114,11 +114,11 @@ public class VistaTweetretweetregistrado extends LitTemplate {
 		this.vaadinHorizontalLayout2 = vaadinHorizontalLayout2;
 	}
 
-	public HorizontalLayout getComentarios() {
+	public Element getComentarios() {
 		return comentarios;
 	}
 
-	public void setComentarios(HorizontalLayout comentarios) {
+	public void setComentarios(Element comentarios) {
 		this.comentarios = comentarios;
 	}
 

@@ -11,4 +11,15 @@ public class VerComentarioA extends VistaVercomentarioregistrado
 //	private Label _eliminarL;
 //	public ListaComentariosA_item _item;
 //	public VerPerfilA _verPA;
+	
+	public VerTweetA _verTweetA;
+	
+	public VerComentarioA(){
+	}
+	
+	public VerComentarioA(VerTweetA verTweetAd){
+	this.getStyle().set("width", "100%");
+	this.getStyle().set("height", "100%");
+	this._verTweetA = verTweetAd;
+	}
 }

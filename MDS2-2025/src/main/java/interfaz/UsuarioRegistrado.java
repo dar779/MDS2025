@@ -18,7 +18,6 @@ public class UsuarioRegistrado extends VistaAct06sesininiciada {
 //	private Image _logoTextImg;
 //	public iACT02UsuarioRegistrado _iACT02UsuarioRegistrado;
 //	public Listafijadeusuariosregistrado _listafijadeusuariosregistrado;
-	public ListaFijaHUR _listaFijaHUR;
 //	public Verpropioperfil _verpropioperfil;
 	public EscribirTweet _escribirTweet;
 //	public Vernotificaciones _vernotificaciones;
@@ -28,6 +27,10 @@ public class UsuarioRegistrado extends VistaAct06sesininiciada {
 //	public VerPerfilUR _perfilAjeno;
 	public VerHashtagR _verHUR;
 	
+	public ListaFijaHUR _listaFijaHUR;
+	public ListaFijaUR _listaFijaUR;
+	public ListaFijaTyRA _listaFijaTyRA;
+	
 	public VerticalLayout elverticallayout;
 	public boolean usuarioAdministrador = false;
 	
@@ -36,6 +39,23 @@ public class UsuarioRegistrado extends VistaAct06sesininiciada {
 		this.getStyle().set("width", "100%");
 		this.getStyle().set("height", "100%");
 		this.Botones();
+		ListaUsuarios__Usuario_registrado_();
+		ListaFijaHashtags__Usuario_registrado_();
+		ListaPublicaciones__Usuario_registrado_();
+	}
+	public void ListaUsuarios__Usuario_registrado_() {
+		this._listaFijaUR = new ListaFijaUR(this);
+		this.getUsuarios().as(VerticalLayout.class).add(_listaFijaUR);
+	}
+	
+	public void ListaFijaHashtags__Usuario_registrado_() {
+		this._listaFijaHUR = new ListaFijaHUR(this);
+		this.getHashtags().as(VerticalLayout.class).add(_listaFijaHUR);
+	}
+	
+	public void ListaPublicaciones__Usuario_registrado_() {
+		this._listaFijaTyRA = new ListaFijaTyRA(this, false);
+		this.getTweets().as(VerticalLayout.class).add(_listaFijaTyRA);
 	}
 	
 	public void Botones() {

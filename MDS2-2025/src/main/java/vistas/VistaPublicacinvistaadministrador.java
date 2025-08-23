@@ -24,8 +24,6 @@ public class VistaPublicacinvistaadministrador extends LitTemplate {
 	private Button ban;
 	@Id("vaadinVerticalLayout2")
 	private Element vaadinVerticalLayout2;
-	@Id("borrar")
-	private Button borrar;
 	@Id("vaadinVerticalLayout3")
 	private Element vaadinVerticalLayout3;
 	@Id("vaadinHorizontalLayout1")
@@ -36,6 +34,10 @@ public class VistaPublicacinvistaadministrador extends LitTemplate {
 	private HorizontalLayout publicacion;
 	@Id("vaadinVerticalLayout5")
 	private Element vaadinVerticalLayout5;
+	@Id("comentarios")
+	private Element comentarios;
+	@Id("borrar")
+	private Button borrar;
 
 	public VistaPublicacinvistaadministrador() {
         // You can initialise any data required for the connected UI components here.
@@ -47,6 +49,14 @@ public class VistaPublicacinvistaadministrador extends LitTemplate {
 
 	public void setInicio(Button inicio) {
 		this.inicio = inicio;
+	}
+
+	public Element getComentarios() {
+		return comentarios;
+	}
+
+	public void setComentarios(Element comentarios) {
+		this.comentarios = comentarios;
 	}
 
 	public Element getVaadinVerticalLayout() {
