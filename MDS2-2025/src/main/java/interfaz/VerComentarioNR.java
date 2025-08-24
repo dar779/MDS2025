@@ -16,4 +16,5 @@ public class VerComentarioNR extends VistaVercomentarionoregistrado
 	this.getStyle().set("height", "100%");
 	this._verTweetNR = verTweetNR;
 	}
+	
 }

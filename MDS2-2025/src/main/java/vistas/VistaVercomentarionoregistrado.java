@@ -24,5 +24,4 @@ public class VistaVercomentarionoregistrado extends LitTemplate {
 	public void setVaadinVerticalLayout(Element vaadinVerticalLayout) {
 		this.vaadinVerticalLayout = vaadinVerticalLayout;
 	}
-
 }

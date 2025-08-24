@@ -22,4 +22,5 @@ public class VerComentarioA extends VistaVercomentarioregistrado
 	this.getStyle().set("height", "100%");
 	this._verTweetA = verTweetAd;
 	}
+	
 }

@@ -11,7 +11,7 @@ import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 @Tag("vista-publicacinvistaadministrador")
 @JsModule("./views/vista-publicacinvistaadministrador.ts")
 public class VistaPublicacinvistaadministrador extends LitTemplate {
-
+	
     @Id("inicio")
 	private Button inicio;
 	@Id("vaadinVerticalLayout")
@@ -146,5 +146,4 @@ public class VistaPublicacinvistaadministrador extends LitTemplate {
 	public void setVaadinVerticalLayout5(Element vaadinVerticalLayout5) {
 		this.vaadinVerticalLayout5 = vaadinVerticalLayout5;
 	}
-
 }

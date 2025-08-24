@@ -61,4 +61,5 @@ public class VerTweetUR extends VistaTweetretweetregistrado
 	public void VerComentario() {
 		throw new UnsupportedOperationException();
 	}
+	
 }
